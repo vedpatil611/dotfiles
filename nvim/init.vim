@@ -37,6 +37,8 @@ filetype plugin indent on
 filetype plugin on
 syntax on
 
+let mapleader = " "
+
 let g:gruvbox_contrast_dark='hard'
 set background=dark
 colorscheme gruvbox
@@ -46,11 +48,11 @@ if executable('rg')
 endif
 
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-let mapleader = " "
 let g:netrw_browse_split=2
 let g:netrw_banner = 0
 
-let g:airline#extensions#tabline#enabled = 0
+let g:airline#extensions#tabline#enabled = 1
+
 let g:LanguageClient_serverCommands = {
 \ 'rust': ['rust-analyzer'],
 \ }
