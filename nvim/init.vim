@@ -52,7 +52,7 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 let g:netrw_browse_split=2
 let g:netrw_banner = 0
 
-let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#enabled = 1
 
 let g:LanguageClient_serverCommands = {
 \ 'rust': ['rust-analyzer'],
