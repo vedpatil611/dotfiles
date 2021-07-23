@@ -10,8 +10,9 @@ set smartcase
 set noswapfile
 set nobackup
 set undodir=~/.vim/undodir
+set directory=~/.vim/swapdir
 set undofile
-set incsearch
+set incsearch nohlsearch
 set splitright splitbelow
 set nocompatible
 
