@@ -19,6 +19,7 @@ set nocompatible
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
+Plug 'joshdick/onedark.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'xuyuanp/nerdtree-git-plugin'
