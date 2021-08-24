@@ -207,5 +207,5 @@ bindsym --release $mod+Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir
 bindsym --release $mod+Shift+Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' # Area selection
 
 # Low battery warning
-exec --no-startup-id i3-battery-popup -n -D -L 20 -l 10
+exec --no-startup-id lowbattery
 
