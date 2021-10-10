@@ -23,12 +23,14 @@ set $mod Mod4
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 font pango:Hack Mono 8
 
-# Colour
+# Colours
 set $bgcolor    #00897b
 set $ibgcolor   #00564d
 set $textcolor  #ffffff
 set $itextcolor #969696
 set $ubgcolor   #ffff00
+set $barcolor   #363636a6
+set $focuscolor #00897b
 
 # class                 border          background      text            indicator
 client.focused          $bgcolor        $bgcolor        $textcolor      $bgcolor
@@ -37,8 +39,7 @@ client.unfocused        $ibgcolor       $ibgcolor       $itextcolor      $ibgcol
 client.urgent           $ubgcolor       $ubgcolor       $textcolor      $ubgcolor
 #client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
-client.background       #ffffff
-
+#client.background       #ffffff
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -203,11 +204,12 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+        i3bar_command i3bar --transparency
         colors {
-                background #363636
+                background $barcolor
                 separator #282828
                 #                       border          background      text
-                focused_workspace       $bgcolor        $bgcolor        $textcolor
+                focused_workspace       $focuscolor     $focuscolor     $textcolor
                 inactive_workspace      $ibgcolor       $ibgcolor       $itextcolor
                 urgent_workspace        $ubgcolor       $ubgcolor       $textcolor
         }
@@ -223,7 +225,7 @@ bindsym $mod+Ctrl+Down exec "amixer set 'Master' 5%-"
 bindsym $mod+Ctrl+m exec "amixer set 'Master' 0%"
 
 #auto load wallpaper
-exec --no-startup-id feh --bg-fill ~/Downloads/soul_of_cinder.jpg
+exec --no-startup-id feh --bg-fill ~/Downloads/irithyll.jpg
 
 # Multi-screen screenshots with scrot
 bindsym --release $mod+Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' # All screens
@@ -233,6 +235,10 @@ bindsym --release $mod+Shift+Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' 
 
 # Low battery warning
 exec --no-startup-id lowbattery
+
+#Disable window titlebar
+for_window [class="^.*"] border pixel 2
+gaps inner 10
 
 # Default workspace for apps
 for_window [class="Brave-browser"] move to workspace $ws2

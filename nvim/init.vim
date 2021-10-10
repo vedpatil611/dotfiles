@@ -29,6 +29,11 @@ Plug 'tikhomirov/vim-glsl'
 Plug 'bling/vim-airline'
 Plug 'cohama/lexima.vim'
 Plug 'sheerun/vim-polyglot'
+Plug 'dart-lang/dart-vim-plugin'
+
+""" Latex plugin
+Plug 'lervag/vimtex'
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
 call plug#end()
 
