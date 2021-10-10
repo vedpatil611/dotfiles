@@ -19,6 +19,8 @@ set nocompatible
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
+Plug 'rakr/vim-one'
+
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'xuyuanp/nerdtree-git-plugin'
@@ -46,6 +48,10 @@ let mapleader = " "
 let g:gruvbox_contrast_dark='hard'
 set background=dark
 colorscheme gruvbox
+let g:gruvbox_transparent_bg=1
+
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
 
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 let g:netrw_browse_split=2
