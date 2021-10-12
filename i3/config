@@ -37,9 +37,6 @@ client.focused          $bgcolor        $bgcolor        $textcolor      $bgcolor
 client.focused_inactive $ibgcolor       $ibgcolor       $itextcolor      $ibgcolor
 client.unfocused        $ibgcolor       $ibgcolor       $itextcolor      $ibgcolor
 client.urgent           $ubgcolor       $ubgcolor       $textcolor      $ubgcolor
-#client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
-
-#client.background       #ffffff
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -69,7 +66,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec --no-startup-id dmenu_run -l 20
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
