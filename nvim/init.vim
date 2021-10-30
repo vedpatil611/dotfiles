@@ -18,19 +18,22 @@ set nocompatible
 
 call plug#begin('~/.vim/plugged')
 
+" Theme
 Plug 'morhetz/gruvbox'
-Plug 'rakr/vim-one'
+Plug 'sheerun/vim-polyglot'
 
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'xuyuanp/nerdtree-git-plugin'
-Plug 'tpope/vim-fugitive'
 Plug 'mbbill/undotree'
+
 Plug 'neoclide/coc.nvim'
+Plug 'tpope/vim-fugitive'
 Plug 'tikhomirov/vim-glsl'
 Plug 'bling/vim-airline'
 Plug 'cohama/lexima.vim'
-Plug 'sheerun/vim-polyglot'
+
+" Language plugins
 Plug 'dart-lang/dart-vim-plugin'
 
 """ Latex plugin
@@ -44,6 +47,9 @@ filetype plugin on
 syntax on
 
 let mapleader = " "
+
+"let g:workspace_autocreate = 1
+"let g:workspace_autosave_always = 1
 
 let g:gruvbox_contrast_dark='hard'
 set background=dark
@@ -60,14 +66,19 @@ let g:netrw_banner = 0
 let g:ctrlp_use_caching = 0
 let g:netrw_winsize = 25
 
+nnoremap <C-L> :vertical res +5<CR>
+nnoremap <C-J> :vertical res -5<CR>
+nnoremap <C-I> :res +5<CR>
+nnoremap <C-K> :res -5<CR>
+
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFocus<CR>
-nnoremap <C-z> :u<CR>
 
 nmap <C-UP> :m-2<CR>  
 nmap <C-DOWN> :m+1<CR>
 nmap <C-s> :w<CR>
+nnoremap <C-z> :u<CR>
 
 nmap <silent> gd :call CocAction('jumpDefinition', 'vsplit')<CR>
 nmap <silent> gD :call CocAction('jumpDefinition', 'split')<CR>
