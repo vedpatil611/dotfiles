@@ -33,9 +33,6 @@ Plug 'tikhomirov/vim-glsl'
 Plug 'bling/vim-airline'
 Plug 'cohama/lexima.vim'
 
-" Language plugins
-Plug 'dart-lang/dart-vim-plugin'
-
 """ Latex plugin
 Plug 'lervag/vimtex'
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
@@ -47,9 +44,6 @@ filetype plugin on
 syntax on
 
 let mapleader = " "
-
-"let g:workspace_autocreate = 1
-"let g:workspace_autosave_always = 1
 
 let g:gruvbox_contrast_dark='hard'
 set background=dark
@@ -66,6 +60,9 @@ let g:netrw_banner = 0
 let g:ctrlp_use_caching = 0
 let g:netrw_winsize = 25
 
+let g:vimtex_view_general_viewer = 'qpdfview'
+
+" splits resize
 nnoremap <C-L> :vertical res +5<CR>
 nnoremap <C-J> :vertical res -5<CR>
 nnoremap <C-I> :res +5<CR>
@@ -75,11 +72,13 @@ nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFocus<CR>
 
+"utils
 nmap <C-UP> :m-2<CR>  
 nmap <C-DOWN> :m+1<CR>
 nmap <C-s> :w<CR>
 nnoremap <C-z> :u<CR>
 
+" Jumpking
 nmap <silent> gd :call CocAction('jumpDefinition', 'vsplit')<CR>
 nmap <silent> gD :call CocAction('jumpDefinition', 'split')<CR>
 nmap <silent> gs :call CocAction('jumpDeclaration', 'vsplit')<CR>
