@@ -28,7 +28,7 @@ set $bgcolor    #00897b
 set $ibgcolor   #00564d
 set $textcolor  #ffffff
 set $itextcolor #969696
-set $ubgcolor   #ffff00
+set $ubgcolor   #ff0000
 set $barcolor   #363636a6
 set $focuscolor #00897b
 
@@ -37,6 +37,8 @@ client.focused          $bgcolor        $bgcolor        $textcolor      $bgcolor
 client.focused_inactive $ibgcolor       $ibgcolor       $itextcolor      $ibgcolor
 client.unfocused        $ibgcolor       $ibgcolor       $itextcolor      $ibgcolor
 client.urgent           $ubgcolor       $ubgcolor       $textcolor      $ubgcolor
+
+#separator #363636
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
