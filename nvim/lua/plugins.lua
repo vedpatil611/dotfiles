@@ -22,6 +22,7 @@ end)
 
 require('plugin-conf.lsp-conf')
 require('plugin-conf.nvim-compe-conf')
+require('plugin-conf.nvim-tree-conf')
 
 vim.g.gruvbox_contrast_dark = 'hard'
 vim.cmd("colorscheme gruvbox")
