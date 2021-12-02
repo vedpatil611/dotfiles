@@ -11,6 +11,19 @@ end
 local n = { noremap = true }
 local ns = { noremap = true, silent = true }
 
+-- splits resize
+k('n', '<C-l>', ':vertical res +5<CR>')
+k('n', '<C-j>', ':vertical res -5<CR>')
+k('n', '<C-i>', ':res +5<CR>')
+k('n', '<C-k>', ':res +5<CR>')
+
+-- basic utils
+k('n', '<C-UP>', ':m-2<CR>')
+k('n', '<C-DOWN>', ':m+1<CR>')
+k('n', '<C-s>', ':w<CR>')
+k('n', '<C-z>', ':z<CR>')
+
+-- nvim tree bindings
 k('n', '<C-t>', ':NvimTreeToggle<CR>')
 k('n', '<C-f>', ':NvimTreeFocus<CR>')
 k('n', '<Leader>r', ':NvimTreeRefresh<CR>')
