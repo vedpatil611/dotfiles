@@ -5,7 +5,7 @@ require('packer').startup(function()
 	use 'neovim/nvim-lspconfig'			-- configuring lsp
 	use 'hrsh7th/nvim-compe'			-- auto completion
 
-	-- Theming
+	-- Theme
 	use 'morhetz/gruvbox'				-- colorscheme
 	use 'hoob3rt/lualine.nvim'			-- statusline
 	use {
@@ -15,7 +15,6 @@ require('packer').startup(function()
 	use 'windwp/nvim-autopairs'			-- automatically close brackets
 	use 'Yggdroot/indentLine'			-- indent lines
 	use 'lukas-reineke/indent-blankline.nvim'	-- indent blank lines
-	use 'norcalli/nvim-colorizer.lua'		-- highlight colors
 
 	use 'kyazdani42/nvim-tree.lua'			-- file tree
 end)
