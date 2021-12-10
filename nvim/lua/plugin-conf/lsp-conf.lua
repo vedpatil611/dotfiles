@@ -52,3 +52,27 @@ for _, lsp in ipairs(servers) do
 		on_attach    = on_attach,
 	})
 end
+
+nvim_lsp.rust_analyzer.setup({
+	capabilities=capabilities,
+	settings = {
+        	["rust-analyzer"] = {
+            		assist = {
+                		importMergeBehavior = "last",
+                		importPrefix = "by_self",
+            		},
+            		cargo = {
+                		loadOutDirsFromCheck = true
+            		},
+            		procMacro = {
+                		enable = true
+            		},
+            		diagnostics = {
+                		enable = true,
+                		disabled = {"unresolved-proc-macro"},
+                -- enableExperimental = true,
+                 -- warningAsHint = {},
+            		},
+        	}
+    	}
+})
