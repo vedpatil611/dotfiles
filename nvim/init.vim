@@ -33,10 +33,6 @@ Plug 'tikhomirov/vim-glsl'
 Plug 'bling/vim-airline'
 Plug 'cohama/lexima.vim'
 
-""" Latex plugin
-Plug 'lervag/vimtex'
-Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
-
 call plug#end()
 
 filetype plugin indent on
@@ -51,7 +47,7 @@ colorscheme gruvbox
 let g:gruvbox_transparent_bg=1
 
 highlight Normal ctermbg=none
-highlight NonText ctermbg=none
+"highlight NonText ctermbg=none
 
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 let g:netrw_browse_split=2
@@ -59,8 +55,6 @@ let g:netrw_banner = 0
 
 let g:ctrlp_use_caching = 0
 let g:netrw_winsize = 25
-
-let g:vimtex_view_general_viewer = 'qpdfview'
 
 " splits resize
 nnoremap <C-L> :vertical res +5<CR>
