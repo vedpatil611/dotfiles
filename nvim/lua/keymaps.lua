@@ -21,7 +21,7 @@ k('n', '<C-k>', ':res +5<CR>')
 k('n', '<C-UP>', ':m-2<CR>')
 k('n', '<C-DOWN>', ':m+1<CR>')
 k('n', '<C-s>', ':w<CR>')
-k('n', '<C-z>', ':z<CR>')
+k('n', '<C-z>', ':u<CR>')
 
 -- nvim tree bindings
 k('n', '<C-t>', ':NvimTreeToggle<CR>')
