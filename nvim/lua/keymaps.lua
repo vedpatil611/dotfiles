@@ -27,3 +27,6 @@ k('n', '<C-z>', ':z<CR>')
 k('n', '<C-t>', ':NvimTreeToggle<CR>')
 k('n', '<C-f>', ':NvimTreeFocus<CR>')
 k('n', '<Leader>r', ':NvimTreeRefresh<CR>')
+
+K('n', '<Leader>c', '<Plug>kommentary_line_default', {})
+K('x', '<Leader>c', '<Plug>kommentary_visual_default', {})

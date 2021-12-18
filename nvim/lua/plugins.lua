@@ -18,9 +18,11 @@ require('packer').startup(function()
 	use 'lukas-reineke/indent-blankline.nvim'	-- indent blank lines
 
 	use 'kyazdani42/nvim-tree.lua'				-- file tree
+	use 'b3nj5m1n/kommentary'					-- comments
 end)
 
 require('plugin-conf.lsp-conf')
 require('plugin-conf.nvim-compe-conf')
 require('plugin-conf.nvim-tree-conf')
-
+require('plugin-conf.lualine-conf')
+require('plugin-conf.autopair-conf')

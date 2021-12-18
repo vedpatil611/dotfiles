@@ -84,6 +84,16 @@ _G.packer_plugins = {
     path = "/home/galactagon/.local/share/nvim/site/pack/packer/start/indentLine",
     url = "https://github.com/Yggdroot/indentLine"
   },
+  kommentary = {
+    loaded = true,
+    path = "/home/galactagon/.local/share/nvim/site/pack/packer/start/kommentary",
+    url = "https://github.com/b3nj5m1n/kommentary"
+  },
+  ["lsp_extensions.nvim"] = {
+    loaded = true,
+    path = "/home/galactagon/.local/share/nvim/site/pack/packer/start/lsp_extensions.nvim",
+    url = "https://github.com/nvim-lua/lsp_extensions.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/galactagon/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -93,11 +103,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/galactagon/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
     url = "https://github.com/windwp/nvim-autopairs"
-  },
-  ["nvim-colorizer.lua"] = {
-    loaded = true,
-    path = "/home/galactagon/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
-    url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
   ["nvim-compe"] = {
     loaded = true,

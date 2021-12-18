@@ -17,6 +17,12 @@ o.undodir       = '~/.vim/undodir//'
 g.splitright    = true
 g.splitbelow	= true
 
-vim.cmd("filetype plugin indent on")
-vim.cmd("filetype plugin on")
-vim.cmd("syntax on")
+vim.g.kommentary_create_default_mappings = false
+
+vim.cmd([[
+
+filetype plugin indent on
+filetype plugin on
+syntax on
+
+]])
