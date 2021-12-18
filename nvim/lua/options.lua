@@ -14,7 +14,9 @@ w.wrap          = false
 g.smartcase     = true
 b.undofile      = true
 o.undodir       = '~/.vim/undodir//'
-g.directory     = '~/.vim/swapdir//'
 g.splitright    = true
 g.splitbelow	= true
 
+vim.cmd("filetype plugin indent on")
+vim.cmd("filetype plugin on")
+vim.cmd("syntax on")
