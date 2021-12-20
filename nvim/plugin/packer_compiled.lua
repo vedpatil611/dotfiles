@@ -74,16 +74,6 @@ _G.packer_plugins = {
     path = "/home/galactagon/.local/share/nvim/site/pack/packer/start/gruvbox",
     url = "https://github.com/morhetz/gruvbox"
   },
-  ["indent-blankline.nvim"] = {
-    loaded = true,
-    path = "/home/galactagon/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
-    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
-  },
-  indentLine = {
-    loaded = true,
-    path = "/home/galactagon/.local/share/nvim/site/pack/packer/start/indentLine",
-    url = "https://github.com/Yggdroot/indentLine"
-  },
   kommentary = {
     loaded = true,
     path = "/home/galactagon/.local/share/nvim/site/pack/packer/start/kommentary",

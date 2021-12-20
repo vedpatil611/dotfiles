@@ -6,6 +6,7 @@ local w = vim.wo
 w.number        = true
 g.hlsearch      = false
 g.smartindent   = true
+g.autoindent	= true
 g.tabstop       = 4
 g.softtabstop   = 4
 g.shiftwidth    = 4
