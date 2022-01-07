@@ -22,7 +22,6 @@ vim.g.kommentary_create_default_mappings = false
 
 vim.cmd([[
 
-filetype plugin indent on
 filetype plugin on
 syntax on
 

@@ -14,7 +14,8 @@ require('packer').startup(function()
 		run = ':TSUpdate'
 	}											-- better highlighting
 	use 'windwp/nvim-autopairs'					-- automatically close brackets
-	-- use 'Yggdroot/indentLine'					-- indent lines
+	use 'windwp/nvim-ts-autotag'				-- html closing tags
+	use 'Yggdroot/indentLine'					-- indent lines
 	-- use 'lukas-reineke/indent-blankline.nvim'	-- indent blank lines
 
 	use 'kyazdani42/nvim-tree.lua'				-- file tree
