@@ -6,6 +6,7 @@ local w = vim.wo
 w.number        = true
 g.hlsearch      = false
 g.smartindent   = true
+g.autoindent	= true
 g.tabstop       = 4
 g.softtabstop   = 4
 g.shiftwidth    = 4
@@ -21,7 +22,6 @@ vim.g.kommentary_create_default_mappings = false
 
 vim.cmd([[
 
-filetype plugin indent on
 filetype plugin on
 syntax on
 

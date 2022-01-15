@@ -4,4 +4,4 @@ vim.cmd("set background=dark")
 vim.g.gruvbox_transparent_bg = 1
 
 vim.cmd("highlight Normal ctermbg=none")
--- vim.cmd("highlight NonText ctermbg=none")
+vim.cmd("highlight NonText ctermbg=none")
