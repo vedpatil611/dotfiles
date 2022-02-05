@@ -20,6 +20,13 @@ require('packer').startup(function()
 
 	use 'kyazdani42/nvim-tree.lua'				-- file tree
 	use 'b3nj5m1n/kommentary'					-- comments
+
+	-- use {
+		-- 'rmagatti/auto-session',
+		-- config = function()
+			-- require('auto-session').setup {}
+		-- end
+	-- }
 end)
 
 require('plugin-conf.lsp-conf')

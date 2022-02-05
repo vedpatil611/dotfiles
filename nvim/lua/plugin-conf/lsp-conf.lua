@@ -46,7 +46,8 @@ local servers = {
 	'rust_analyzer',
 	'tsserver',
 	'yamlls',
-	'vuels'
+	'vuels',
+    'r_language_server'
 }
 for _, lsp in ipairs(servers) do
   	nvim_lsp[lsp].setup({
